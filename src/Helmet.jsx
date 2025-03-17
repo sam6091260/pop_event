@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 
 const MyHelmet = () => {
-  const PIC = "https://popevent.netlify.app/images/coco.png?v=2"; // 確保圖片 URL 正確
+  const PIC = "https://popevent.netlify.app/images/coco.png?v=2"; // 確保圖片網址正確
 
   return (
     <Helmet>
@@ -12,6 +12,8 @@ const MyHelmet = () => {
       <meta property="og:image" content={PIC} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://popevent.netlify.app/" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="ROUGE COCO" />
       <meta name="twitter:description" content="探索專屬您的COCO唇膏色選" />
