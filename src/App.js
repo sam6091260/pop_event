@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import StartPage from "./StartPage/StartPage";
 import TestPage from "./TestPage/TestPage"; // 假設測驗的主要頁面
-
+import MyHelmet from "./Helmet";
 import "./index.css";
 
 const App = () => {
@@ -20,6 +20,7 @@ const App = () => {
 
   return (
     <div>
+      <MyHelmet />
       {/* StartPage 淡出 */}
       <div className={`page ${fadeOut ? "fade-out" : ""}`}>
         {!loading && !showTest && <StartPage onStart={handleStart} />}
