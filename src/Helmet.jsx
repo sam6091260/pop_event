@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import PIC from "../src/components/PIC/RCC_2025_CMYK_ISOcoatedV2_T300_R300.svg"
+import PIC from "../public/images/RCC_2025_CMYK_ISOcoatedV2_T300_R300.svg"
 
 const MyHelmet = () => {
     return (
