@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet";
+import PIC from "./components/PIC/RCC_2025_CMYK_ISOcoatedV2_T300_R300.svg"
 
 const MyHelmet = () => {
-    const PIC = "/images/RCC_2025_CMYK_ISOcoatedV2_T300_R300.svg";
+    // const PIC = "/images/RCC_2025_CMYK_ISOcoatedV2_T300_R300.svg";
 
     return (
         <Helmet>
