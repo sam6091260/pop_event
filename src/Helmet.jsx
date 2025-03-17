@@ -10,8 +10,8 @@ const MyHelmet = () => {
       <meta property="og:title" content="ROUGE COCO" />
       <meta property="og:description" content="探索專屬您的COCO唇膏色選" />
       <meta property="og:image" content={PIC} />
-      <meta property="og:image:width" content="600" />
-      <meta property="og:image:height" content="315" />
+      <meta property="og:image:width" content="1000" />
+      <meta property="og:image:height" content="580" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://popevent.netlify.app/" />
       <meta name="twitter:card" content="summary_large_image" />
