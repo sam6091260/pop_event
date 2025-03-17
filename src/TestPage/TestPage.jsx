@@ -461,6 +461,7 @@ const App = () => {
                             style={{
                               fontSize: "14px",
                               fontWeight: "bold",
+                              whiteSpace: "nowrap",
                             }}
                           >
                             {result.lipENameL}
