@@ -1,22 +1,50 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./style.css";
 import { Button } from "antd";
 import styled from "styled-components";
 import PIC from "../components/PIC/RCC_2025_CMYK_ISOcoatedV2_T300_R300.svg";
 
-// 创建自定义的 Button 样式
 const CustomButton = styled(Button)`
+
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
 
   &:hover {
-    color: #d43f27 !important; /* 新的 hover 文字颜色 */
-    border-color: #e5948b !important; /* 确保边框颜色与背景一致 */
+    color: #d43f27 !important;
+    border-color: #e5948b !important; 
   }
 `;
 
 const StartPage = ({ onStart }) => {
+  // const [isClicked, setIsClicked] = useState(false);
+  // const animationFrameId = useRef(null);
+  // const waveScale = useRef(0); // 儲存濾鏡強度
+
+  // const handleClick = () => {
+  //   setIsClicked(true);
+  //   waveScale.current = 50; // 初始濾鏡強度
+  //   animate();
+  // };
+
+  // const animate = () => {
+  //   waveScale.current -= 1; // 逐漸減弱濾鏡強度
+  //   if (waveScale.current >= 0) {
+  //     document.querySelector("#displacementMap").setAttribute("scale", waveScale.current);
+  //     animationFrameId.current = requestAnimationFrame(animate);
+  //   } else {
+  //     setIsClicked(false);
+  //     onStart();
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   return () => {
+  //     if (animationFrameId.current) {
+  //       cancelAnimationFrame(animationFrameId.current);
+  //     }
+  //   };
+  // }, []);
   return (
     <div className="start-container">
       {/* <div className="dotted-line"></div> */}
@@ -28,6 +56,35 @@ const StartPage = ({ onStart }) => {
         {" "}
         <span className="coco-text">COCO</span>唇膏色選
       </p>
+      {/* <svg style={{ position: "absolute", height: "0", width: "0" }}>
+        <defs>
+          <filter id="wave">
+            <feTurbulence
+              id="turbulence"
+              type="fractalNoise"
+              baseFrequency="0.02 0.05"
+              numOctaves="3"
+              result="NOISE"
+            />
+            <feDisplacementMap
+              id="displacementMap" // 添加 id
+              in="SourceGraphic"
+              in2="NOISE"
+              scale="0" // 初始 scale 值
+              xChannelSelector="R"
+              yChannelSelector="G"
+            />
+          </filter>
+        </defs>
+      </svg>
+
+      <CustomButton
+        className={`start-btn`}
+        onClick={handleClick}
+        style={{ fontFamily: "CustomFont", filter: isClicked ? "url(#wave)" : "none" }}
+      >
+        <span className="start-btn-text">START</span>
+      </CustomButton> */}
       <CustomButton
         className="start-btn ripple"
         onClick={onStart}

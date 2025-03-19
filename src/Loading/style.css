@@ -1,111 +1,160 @@
 .load-container {
-    background: #ffffff;
-    max-width: 368px;
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    border-radius: 40px;
+  background: #ffffff;
+  max-width: 368px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  border-radius: 40px;
 }
 
+/* code #2 */
+.loading02 span {
+  animation: loading02 1.2s infinite alternate;
+  font-family: 'CustomFont';
+  color: #DF3021;
+}
+
+.loading02 span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading02 span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.loading02 span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.loading02 span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.loading02 span:nth-child(6) {
+  animation-delay: 1.0s;
+}
+
+.loading02 span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+@keyframes loading02 {
+  0% {
+    filter: blur(0);
+    opacity: 1;
+  }
+
+  100% {
+    filter: blur(5px);
+    opacity: 0.2;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
-    .load-container {
+  .load-container {
     max-width: 100%;
     margin: 16px;
-    min-height: calc(100vh - 40px); /* 減去邊距後的自適應高度 */
+    min-height: calc(100vh - 40px);
+    /* 減去邊距後的自適應高度 */
     height: auto;
-    }
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .load-container {
+  .load-container {
     margin: 10px;
-    min-height: calc(100vh - 20px); /* 減去邊距後的自適應高度 */
+    min-height: calc(100vh - 20px);
+    /* 減去邊距後的自適應高度 */
     height: auto;
-    }
+  }
 }
 
 
 
 /* 調整步驟圓點的顏色 */
 .custom-dot {
-    width: 10px; 
-    height: 10px;
-    border-radius: 50%;
-    background-color: #d9d9d9; /* 預設為灰色 */
-    display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  /* 預設為灰色 */
+  display: inline-block;
 }
 
 .custom-dot.active {
-background-color: #e5948b; 
+  background-color: #e5948b;
 }
 
 
-.ant-steps.ant-steps-dot .ant-steps-item-tail::after, 
+.ant-steps.ant-steps-dot .ant-steps-item-tail::after,
 .ant-steps.ant-steps-dot.ant-steps-small .ant-steps-item-tail::after {
-    height: 1px !important; 
-    /* width: 10px;  */
+  height: 1px !important;
+  /* width: 10px;  */
 }
-.ant-steps .ant-steps-item-finish .ant-steps-item-container .ant-steps-item-tail::after{
-    height: 1px !important; 
-    
-    background-color: #e5948b; 
+
+.ant-steps .ant-steps-item-finish .ant-steps-item-container .ant-steps-item-tail::after {
+  height: 1px !important;
+
+  background-color: #e5948b;
 }
 
 .progress-container {
   margin: 0 auto;
   width: 80%;
-    padding: 8px 22px 40px 0;
-  }
+  padding: 8px 22px 40px 0;
+}
 
-  .steps-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-left: 36.5px;
-  }
+.steps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 36.5px;
+}
 
-  .step-item {
-    display: flex;
-    align-items: center;
-    flex: 1;
+.step-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
 
-  }
+}
 
-  .step-circle {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    border: 2px solid #ed9d8a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #ed9d8a;
-    transition: all 0.3s ease;
-  }
-  
-  .step-circle.active {
-    background-color: #d22d35;
-    border-color: #d22d35;
-    color: #ffffff;
-  }
-  
-  .step-line {
-    flex: 1;
-    height: 0;
-    border-top: 1px dashed #d22d35; /* 設置虛線邊框 */
-    margin: 0 5px;
-    transition: all 0.3s ease;
-  }
-  
-  
-  .step-line.active {
-    border-top: 1px dashed #D43F27;
-  }
+.step-circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #ed9d8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ed9d8a;
+  transition: all 0.3s ease;
+}
+
+.step-circle.active {
+  background-color: #d22d35;
+  border-color: #d22d35;
+  color: #ffffff;
+}
+
+.step-line {
+  flex: 1;
+  height: 0;
+  border-top: 1px dashed #d22d35;
+  /* 設置虛線邊框 */
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+
+.step-line.active {
+  border-top: 1px dashed #D43F27;
+}
