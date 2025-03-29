@@ -127,7 +127,6 @@ const StartPage = ({ onStart }) => {
       <p className="start-p">
         <span className="coco-text">COCO</span>系列唇彩色選
       </p>
-
       <CustomButton
         className="start-btn"
         onClick={() => {

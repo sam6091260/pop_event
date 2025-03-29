@@ -413,7 +413,11 @@ const App = () => {
           >
             <div className="main-layout">
               {result ? (
-                <img src={PIC} alt="coco" className="coco-img" />
+                // <img src={PIC} alt="coco" className="coco-img" />
+                <div style={{ margin: "18px 0" }}>
+                  <div className="test-title">ROUGE</div>
+                  <div className="test-title">COCO</div>
+                </div>
               ) : (
                 <div className="main-title">
                   <p className="titles" style={{ fontSize: "18px" }}>
