@@ -1,33 +1,41 @@
-
-
 .start-container {
   overflow: hidden;
-    background: #f891a6;
-    /* max-width: min(368px, 90vw);  */
-    max-width: 368px;
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    position: relative;
-    opacity: 0; /* 預設隱藏 */
-    animation: fadeIn 1.5s ease-out forwards;
+  background: #f891a6;
+  /* max-width: min(368px, 90vw);  */
+  max-width: 368px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  opacity: 0;
+  /* 預設隱藏 */
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 .start-text {
-    display: flex;
-    align-items: center;
-    color: #DF3021;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    font-family: 'CustomFont';
+  display: flex;
+  align-items: center;
+  color: #DF3021;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: 'CustomFont';
 }
 
 .coco-text {
   font-family: 'CustomFont';
+}
+
+.start-title {
+  color: #DF3021;
+  font-family: 'CustomFont';
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 .start-p {
@@ -45,127 +53,67 @@
   width: 0;
   height: 3px;
   margin-left: 2px;
-  border-left: 8px solid transparent; /* 左邊透明 */
-  border-right: 8px solid transparent; /* 右邊透明 */
-  border-top: 8px solid #DF3021; /* 向上的白色三角形 */
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #DF3021;
   transform: rotate(-90deg);
 }
 
 .start-btn {
-    background-color: #ffffff; /* 設置背景顏色為白色 */
-    color: #DF3021; /* 設置文字顏色為紅色 */
-    width: 100px; /* 設置寬度，使其成圓形 */
-    height: 100px; /* 設置高度，使其成圓形 */
-    border-radius: 50%; /* 設置完全圓形邊角 */
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    display: flex; /* 讓內部元素居中 */
-    justify-content: center; /* 讓內部元素水平居中 */
-    align-items: center; /* 讓內部元素垂直居中 */
-    text-align: center;
-    z-index: 1001;
-    margin: 80px;
-    overflow: hidden;
-cursor: pointer;
-    transition: transform 5s ease-in-out;
-  }
-
-  .start-btn::after {
-    content: "";
-    position: absolute;
-    top: -150%;
-    left: -150%;
-    width: 300%;
-    height: 300%;
-    background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
-    );
-    transform: rotate(30deg);
-    animation: diagonal-shine 2s infinite linear;
-    
-    }
-
-  .start-btn-text {
-    font-family: 'CustomFont';
-    margin-left: 5px;
-  }
-
-  .start-btn:hover {
-    background-color: #ffffff;
-  }
-  
-.start-img { 
-    width: 180px;
-    margin-bottom: 20px;
+  width: 100px;
+  /* 設置寬度，使其成圓形 */
+  height: 100px;
+  /* 設置高度，使其成圓形 */
+  border-radius: 50%;
+  /* 設置完全圓形邊角 */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  /* 讓內部元素居中 */
+  justify-content: center;
+  /* 讓內部元素水平居中 */
+  align-items: center;
+  /* 讓內部元素垂直居中 */
+  text-align: center;
+  z-index: 1001;
+  margin: 80px;
+  cursor: pointer;
+  filter: none;
 }
+
+.start-btn-text {
+  font-family: 'CustomFont';
+  margin-left: 5px;
+}
+
+.start-btn:hover {
+  background-color: #ffffff;
+}
+
+.start-img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
 .dotted-line {
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
-  @keyframes diagonal-shine {
-    0% {
-    transform: translateX(-150%) translateY(-150%) rotate(30deg);
-    }
-    100% {
-    transform: translateX(150%) translateY(150%) rotate(30deg);
-    }
-    }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      
-    }
-    to {
-      opacity: 1;
-      
-    }
+  to {
+    opacity: 1;
   }
-  
+}
 
-  
-  @media screen and (max-width: 768px) {
-    .start-container {
-      max-width: 100%;
-      /* max-width: 100%;
-      margin: 16px; */
-      /* min-height: calc(100vh - 40px); 
-      height: auto; */
-    }
+@media screen and (max-width: 768px) {
+  .start-container {
+    max-width: 100%;
   }
-  
-  @media screen and (max-width: 480px) {
-    .start-container {
-      /* margin: 10px; */
-      /* min-height: calc(100vh - 20px); 
-      height: auto; */
-    }
-  }
-
-  .ripple:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
-    transition: transform 1.5s;
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 50%;
-  }
-  
-  .ripple:hover:before {
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-
-  /*--------------------------------*/
-
-  
+}

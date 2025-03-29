@@ -47,9 +47,19 @@ body {
   color: #DF3021;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 3px;
+  margin-bottom: 8px;
   font-family: 'CustomFont';
 }
+
+.test-title {
+  color: #DF3021;
+  font-family: 'CustomFont';
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
 
 .coco-img-main {
   width: 124px;
@@ -222,6 +232,7 @@ margin-bottom: 20px;
     margin-bottom: 8px;
   }
   .final-h1 {
+    font-size: 20px;
     margin-bottom: 18px;
   }
   .final-card-area {

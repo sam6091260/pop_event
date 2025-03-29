@@ -21,6 +21,16 @@ const Loading = () => {
 
   return (
     <div className="load-container">
+      <div class="loading02">
+        <span data-text="L">L</span>
+        <span data-text="O">O</span>
+        <span data-text="A">A</span>
+        <span data-text="D">D</span>
+        <span data-text="I">I</span>
+        <span data-text="N">N</span>
+        <span data-text="G">G</span>
+      </div>
+
       <Progress
         percent={progress}
         status="active"
@@ -28,7 +38,7 @@ const Loading = () => {
         strokeWidth={2}
         strokeColor={{
           "0%": "#f891a6",
-          "100%": "#9b2857",
+          "100%": "#DF3021",
         }}
       />
     </div>

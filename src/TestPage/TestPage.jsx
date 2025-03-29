@@ -153,8 +153,8 @@ const answers = [
     color: "f891a6",
     colorsName: "溫柔浪漫",
     text: "你總是散發平易近人的親切感，為周圍的人帶來輕鬆愉悅的氛圍。",
-    highlight: "自然溫柔裸粉色調",
-    endText: "的唇膏，襯托你與生俱來的親和力。",
+    highlight: "溫柔裸粉色調",
+    endText: "的唇彩，襯托你與生俱來的親和力。",
     imgL: OTF,
     imgR: OTZ,
     bgL: OTFBG,
@@ -171,9 +171,9 @@ const answers = [
     fourth: "B",
     color: "ed9d8a",
     colorsName: "自信沈穩",
-    text: "你擁有積極冒險的精神，總是勇於嘗試新事物，探索未知的世界。",
-    highlight: "自信沉穩裸棕色調",
-    endText: "的唇膏，展現你自信而從容不迫的氣場。",
+    text: "你擁有積極冒險的精神，總是勇於接受挑戰，樂於嘗試新事物。",
+    highlight: "溫暖橘杏色調",
+    endText: "的唇彩，突顯你開朗充滿活力的個性。",
     imgL: OZS,
     imgR: OOT,
     bgL: OZSBG,
@@ -190,9 +190,9 @@ const answers = [
     fourth: "C",
     color: "d22d35",
     colorsName: "熱情明亮",
-    text: "你不掩飾表達自己的情感與想法，總是以最真誠的方式呈現自我。",
-    highlight: "熱情明亮暖紅色調",
-    endText: "的唇膏，展現出你直率敢言的個性。",
+    text: "你不掩飾表達自己的情感與想法，敢於真誠地表達自己與忠於自我。",
+    highlight: "熱情亮紅色調",
+    endText: "的唇彩，展現出你直率敢言的個性。",
     imgL: OOF,
     imgR: OSZ,
     bgL: OOFBG,
@@ -210,8 +210,8 @@ const answers = [
     color: "9b2857",
     colorsName: "神秘優雅",
     text: "你喜愛低調的生活方式，需要時間才能認識你內心豐富的情感。",
-    highlight: "神秘優雅莓果色調",
-    endText: "的唇膏，完美詮釋你高雅內斂的性格。",
+    highlight: "優雅粉紫色調",
+    endText: "的唇彩，完美詮釋你高雅內斂的性格。",
     imgL: OTE,
     imgR: OTS,
     bgL: OTEBG,
@@ -228,42 +228,42 @@ const answers = [
 const quastions = [
   {
     index: 1,
-    question: "你希望初次見面的人怎麼形容你的個性?",
+    question: "您希望初次見面的人怎麼形容您的個性?",
     options: [
-      { A: "讓人感覺溫暖好親近\n像個擅長聆聽得朋友" },
-      { B: "讓人感覺自信有想法\n對許多事物充滿好奇" },
-      { C: "喜愛分享自己理念想法\n也樂於接納他人的\n獨特之處" },
-      { D: "想保持一點低調\n讓人對你充滿好奇" },
+      { A: "溫柔讓人感到好親近\n像個擅長聆聽的朋友" },
+      { B: "樂觀開朗充滿正能量\n對許多事物充滿好奇" },
+      { C: "喜愛分享自己理念想法\n也樂於接納他人的意見" },
+      { D: "想保持一點低調\n讓人對您充滿好奇" },
     ],
   },
   {
     index: 2,
     question: "您在日常生活中喜愛的妝容風格是?",
     options: [
-      { A: "自然柔和\n綻放粉嫩好氣色" },
-      { B: "知性時髦\n散發個人魅力" },
-      { C: "明亮耀眼\n展現十足氣場" },
-      { D: "低調優雅\n展現獨樹一格的品味" },
+      { A: "甜美氣質\n散發自然粉嫩氣色" },
+      { B: "溫暖柔和\n帶點活力氣息" },
+      { C: "明亮搶眼\n展現十足氣場" },
+      { D: "清冷優雅\n展散發獨樹一格的氣質" },
     ],
   },
   {
     index: 3,
     question: "您會選擇什麼穿搭風格出席好友的派對活動?",
     options: [
-      { A: "偏好簡約的風格\n喜歡自然舒適的感覺" },
-      { B: "喜歡乾淨俐落的搭配\n成熟穩重的風格" },
-      { C: "喜歡別具一格\n時尚亮眼的風格\n能夠展現個人特色" },
-      { D: "高雅氣質的設計\n整體帶有低調的奢華感" },
+      { A: "偏好浪漫的風格\n散發自然甜美感" },
+      { B: "簡約俐落的搭配\n展現俏麗的風格" },
+      { C: "引人注目新穎的設計\n展現時尚品味與自信" },
+      { D: "高雅氣質的設計\n給人低調奢華感" },
     ],
   },
   {
     index: 4,
-    question: "你期待到什麼樣的地方展開一場自由冒險之旅?",
+    question: "您期待到什麼樣的地方展開一場自由冒險之旅?",
     options: [
-      { A: "如童夢般舒適寧靜的小鎮\n讓心靈得到完全\n放鬆和療癒" },
-      { B: "置身壯麗的自然奇景之中\n樂在探索充滿驚奇的景觀" },
+      { A: "如童話般舒適寧靜的小鎮\n讓心靈得到完全的放鬆" },
+      { B: "充滿壯麗的自然奇景\n樂在探索驚奇的景觀" },
       { C: "陽光明媚充滿人潮的海灘\n盡情釋放所有的生活壓力" },
-      { D: "悠久歷史的古老城市\n每個角落都隱藏著\n未知的故事" },
+      { D: "悠久歷史的古老城市\n每個角落都充滿了故事" },
     ],
   },
 ];
@@ -324,7 +324,7 @@ const App = () => {
       setIsLoading(true); // 顯示 Loading 畫面
 
       setTimeout(() => {
-        const thirdAndFourthKey = newSelections.slice(3).join("");
+        const thirdAndFourthKey = newSelections[1];
         const matchAnswer = answers.find(
           (answer) => answer.combination === thirdAndFourthKey
         );
@@ -419,7 +419,9 @@ const App = () => {
                   <p className="titles" style={{ fontSize: "18px" }}>
                     GET YOUR
                   </p>
-                  <img src={PIC} alt="coco" className="coco-img-main" />
+                  <div className="test-title">ROUGE</div>
+                  <div className="test-title">COCO</div>
+                  {/* <img src={PIC} alt="coco" className="coco-img-main" /> */}
                   {/* <p className="titles">ROUGE COCO</p> */}
                 </div>
               )}
@@ -432,11 +434,11 @@ const App = () => {
 
               {result ? (
                 <div className="final-layout">
-                  <h1 className="final-h1">
+                  <div className="final-h1">
                     你的專屬
                     <span className="lipText">COCO</span>
-                    唇膏色選
-                  </h1>
+                    系列唇彩色選
+                  </div>
                   <div className="final-card-area">
                     <div className="final-card">
                       <div className="card-up">
@@ -552,14 +554,14 @@ const App = () => {
                     </div>
                   </div>
                   <div className="lip-detail">
-                    <p
+                    {/* <p
                       className="lip-detail-title"
                       style={{
                         backgroundColor: `#${result.color}`,
                       }}
                     >
                       {result.colorsName}
-                    </p>
+                    </p> */}
                     <p className="lip-detail-p">
                       {result.text}
                       <span
