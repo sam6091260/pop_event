@@ -3,14 +3,14 @@ import { Button, Space, ConfigProvider } from "antd";
 import "./App.css";
 import Progress from "../Loading/Progress";
 import PIC from "../components/PIC/RCC_2025_CMYK_ISOcoatedV2_T300_R300.svg";
-import OTF from "../components/PIC/124.png";
-import OTZ from "../components/PIC/130.png";
-import OZS from "../components/PIC/106.png";
-import OOT from "../components/PIC/112.png";
-import OOF from "../components/PIC/114.png";
-import OSZ from "../components/PIC/120.png";
-import OTE from "../components/PIC/128.png";
-import OTS from "../components/PIC/126.png";
+import OTF from "../components/PIC/928.jpg";
+import OTZ from "../components/PIC/758.jpg";
+import OZS from "../components/PIC/916.jpg";
+import OOT from "../components/PIC/754.jpg";
+import OOF from "../components/PIC/920.jpg";
+import OSZ from "../components/PIC/754.jpg";
+import OTE from "../components/PIC/930.jpg";
+import OTS from "../components/PIC/762.jpg";
 import OTFBG from "../components/PIC/124_BG.jpg";
 import OTZBG from "../components/PIC/130_BG.jpg";
 import OZSBG from "../components/PIC/106_BG.jpg";
@@ -159,12 +159,12 @@ const answers = [
     imgR: OTZ,
     bgL: OTFBG,
     bgR: OTZBG,
-    lipColorL: "124",
-    lipENameL: "MARIE",
-    lipCNameL: "瑪麗",
-    lipColorR: "130",
-    lipENameR: "LA PAUSA",
-    lipCNameR: "法式別墅",
+    lipColorL: "928",
+    // lipENameL: "MARIE",
+    lipCNameL: "春櫻",
+    lipColorR: "758",
+    // lipENameR: "LA PAUSA",
+    lipCNameR: "粉櫻",
   },
   {
     combination: "B",
@@ -178,12 +178,12 @@ const answers = [
     imgR: OOT,
     bgL: OZSBG,
     bgR: OOTBG,
-    lipColorL: "106",
-    lipENameL: "DEAUVILLE",
-    lipCNameL: "杜維埃",
-    lipColorR: "112",
-    lipENameR: "PARIS IER",
-    lipCNameR: "巴黎第一區",
+    lipColorL: "916",
+    // lipENameL: "DEAUVILLE",
+    lipCNameL: "西柚",
+    lipColorR: "754",
+    // lipENameR: "PARIS IER",
+    lipCNameR: "杏桃",
   },
   {
     combination: "C",
@@ -197,12 +197,12 @@ const answers = [
     imgR: OSZ,
     bgL: OOFBG,
     bgR: OSZBG,
-    lipColorL: "114",
-    lipENameL: "LOS ANGELES",
-    lipCNameL: "洛杉磯",
-    lipColorR: "120",
-    lipENameR: "GABRIELLE",
-    lipCNameR: "嘉柏麗",
+    lipColorL: "920",
+    // lipENameL: "LOS ANGELES",
+    lipCNameL: "蜜蘋果",
+    lipColorR: "754",
+    // lipENameR: "GABRIELLE",
+    lipCNameR: "櫻桃",
   },
   {
     combination: "D",
@@ -216,12 +216,12 @@ const answers = [
     imgR: OTS,
     bgL: OTEBG,
     bgR: OTSBG,
-    lipColorL: "128",
-    lipENameL: "LÉGENDE",
-    lipCNameL: "傳奇",
-    lipColorR: "126",
-    lipENameR: "VENISE",
-    lipCNameR: "威尼斯",
+    lipColorL: "930",
+    // lipENameL: "LÉGENDE",
+    lipCNameL: "木玫瑰",
+    lipColorR: "762",
+    // lipENameR: "VENISE",
+    lipCNameR: "覆盆莓",
   },
 ];
 
@@ -439,7 +439,7 @@ const App = () => {
               {result ? (
                 <div className="final-layout">
                   <div className="final-h1">
-                    你的專屬
+                    您的專屬
                     <span className="lipText">COCO</span>
                     系列唇彩色選
                   </div>
