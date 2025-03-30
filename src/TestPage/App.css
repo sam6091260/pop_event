@@ -202,6 +202,15 @@ margin-bottom: 20px;
   animation: slideTop 0.5s ease-out forwards;
 }
 
+.lip-more {
+
+  width: 273px;
+  font-size: 13px;
+  line-height: 1.5;
+  animation: slideTop 0.8s ease-out forwards;
+  margin-bottom: 8px;
+}
+
 .lip-detail-p {
   width: 273px;
   font-size: 13px;

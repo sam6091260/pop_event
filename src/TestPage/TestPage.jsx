@@ -165,6 +165,7 @@ const answers = [
     lipColorR: "758",
     // lipENameR: "LA PAUSA",
     lipCNameR: "粉櫻",
+    lipMore: "• 其他推薦色選 936粉雪、938裸粉",
   },
   {
     combination: "B",
@@ -184,6 +185,7 @@ const answers = [
     lipColorR: "754",
     // lipENameR: "PARIS IER",
     lipCNameR: "杏桃",
+    lipMore: "• 其他推薦色選 914焦糖、752蜜糖",
   },
   {
     combination: "C",
@@ -203,6 +205,7 @@ const answers = [
     lipColorR: "754",
     // lipENameR: "GABRIELLE",
     lipCNameR: "櫻桃",
+    lipMore: "• 其他推薦色選 924紅烏龍",
   },
   {
     combination: "D",
@@ -222,6 +225,7 @@ const answers = [
     lipColorR: "762",
     // lipENameR: "VENISE",
     lipCNameR: "覆盆莓",
+    lipMore: "• 其他推薦色選 922野莓、764紫丁香",
   },
 ];
 
@@ -566,6 +570,7 @@ const App = () => {
                     >
                       {result.colorsName}
                     </p> */}
+                    <p className="lip-more">{result.lipMore}</p>
                     <p className="lip-detail-p">
                       {result.text}
                       <span
