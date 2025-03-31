@@ -8,7 +8,7 @@ import OTZ from "../components/PIC/758.png";
 import OZS from "../components/PIC/916.png";
 import OOT from "../components/PIC/754.png";
 import OOF from "../components/PIC/920.png";
-import OSZ from "../components/PIC/754.png";
+import OSZ from "../components/PIC/756.png";
 import OTE from "../components/PIC/930.png";
 import OTS from "../components/PIC/762.png";
 import OTFBG from "../components/PIC/928_BG.jpg";
@@ -16,7 +16,7 @@ import OTZBG from "../components/PIC/758_BG.jpg";
 import OZSBG from "../components/PIC/916_BG.jpg";
 import OOTBG from "../components/PIC/754_BG.jpg";
 import OOFBG from "../components/PIC/920_BG.jpg";
-import OSZBG from "../components/PIC/754_BG.jpg";
+import OSZBG from "../components/PIC/756_BG.jpg";
 import OTEBG from "../components/PIC/930_BG.jpg";
 import OTSBG from "../components/PIC/762_BG.jpg";
 import bg from "../components/PIC/問答底圖-1.0.jpg";
@@ -192,7 +192,7 @@ const answers = [
     fourth: "C",
     color: "d22d35",
     colorsName: "熱情明亮",
-    text: "您不掩飾表達自己的情感與想法，敢於真誠地表達自己與忠於自我。",
+    text: "您不掩飾自己的情感與想法，敢於真誠地表達自己與忠於自我。",
     highlight: "熱情亮紅色調",
     endText: "的唇彩，展現出您直率敢言的個性。",
     imgL: OOF,
@@ -202,7 +202,7 @@ const answers = [
     lipColorL: "920",
     // lipENameL: "LOS ANGELES",
     lipCNameL: "蜜蘋果",
-    lipColorR: "754",
+    lipColorR: "756",
     // lipENameR: "GABRIELLE",
     lipCNameR: "櫻桃",
     lipMore: "• 其他推薦色選 924紅烏龍",
