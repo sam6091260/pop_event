@@ -570,7 +570,7 @@ const App = () => {
                     >
                       {result.colorsName}
                     </p> */}
-                    <p className="lip-more">{result.lipMore}</p>
+
                     <p className="lip-detail-p">
                       {result.text}
                       <span
@@ -583,6 +583,7 @@ const App = () => {
                       </span>
                       {result.endText}
                     </p>
+                    <p className="lip-more">{result.lipMore}</p>
                   </div>
 
                   <button
